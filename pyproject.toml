@@ -1,0 +1,22 @@
+[project]
+name = "tennis-wire-headshots"
+version = "0.1.0"
+description = "Starter player roster and headshot cutouts from Wikimedia Commons"
+requires-python = ">=3.12"
+dependencies = [
+    "opencv-python>=4.10",
+    "rembg[cpu]>=2.0.60",
+    "pillow>=10.4",
+    "requests>=2.32",
+    "numpy>=2.0",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,15 @@
+# Run artefacts: roster CSVs, Commons originals, cutouts, HTML reports,
+# detector weights
+out/
+
+# rembg weights live in ~/.rembg/models, but keep stray ones out of the repo
+*.onnx
+
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
